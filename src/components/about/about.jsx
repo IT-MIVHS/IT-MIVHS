@@ -11,11 +11,8 @@ const About = () => {
                             About
                         </h1>
                     </div>
-                    <div
-                        id="aboutContainer"
-                        className="m-4 text-center flex flex-col space-y-10 observe"
-                    >
-                        <p>
+                    <div id="aboutContainer" className="m-4 text-center flex flex-col space-y-10">
+                        <p className="observe">
                             Kami adalah organisasi IT yang berdedikasi untuk mendorong inovasi di
                             era digital. Dengan semangat kolaborasi, kami menyediakan wadah bagi
                             individu berbakat untuk belajar, berbagi, dan menciptakan solusi

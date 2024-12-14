@@ -1,4 +1,5 @@
 import './App.css';
+import { start_observe } from "./observer.js";
 import React, { useEffect } from 'react';
 import Header from './components/header/header.jsx';
 import Home from './components/home/home.jsx';
@@ -8,15 +9,8 @@ import { Suspense } from 'react';
 
 function App() {
     useEffect(() => {
-        const script = document.createElement("script");
-
-        script.src = "./observer.js";
-        script.async = true;
-
-        if (!Array.from(document.body.children).find(element => element.tagName === "SCRIPT")) {
-            document.body.appendChild(script);
-        }
-    }, []);
+        start_observe();
+    });
 
     return (
         <Suspense fallback={<div className="custom-loader"></div>}>

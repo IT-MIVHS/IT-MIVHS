@@ -20,7 +20,7 @@ const Project = function () {
                                     <h1 className="title text-center font-semibold uppercase observe">
                                         {title}
                                     </h1>
-                                    <p className="desc text-justify">{desc}</p>
+                                    <p className="desc text-justify observe">{desc}</p>
                                     <div
                                         id="date"
                                         className="flex flex-row gap-4 justify-end observe"

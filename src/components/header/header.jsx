@@ -4,7 +4,10 @@ import React from "react";
 const Header = () => {
     return (
         <section>
-            <header id="header" className="fixed text-white overflow-hidden z-50">
+            <header
+                id="header"
+                className="fixed text-white overflow-hidden z-50 w-4/5 left-1/2 -translate-x-1/2"
+            >
                 <nav className="mt-8 py-1 px-6 flex justify-between items-center flex-row rounded-3xl overflow-hidden">
                     <div id="logos" className="flex items-center gap-5 rounded-full">
                         <img
