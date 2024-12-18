@@ -6,6 +6,7 @@ import Home from './components/home/home.jsx';
 import About from './components/about/about.jsx';
 import Project from './components/project/project.jsx';
 import Contact from './components/contact/contact.jsx';
+import RobotComponents from './components/robotComponent/robotComponents.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                         <About />
                         <Project />
                         <Contact />
+                        <RobotComponents />
                     </div>
                 </Suspense>} />
             </Routes>

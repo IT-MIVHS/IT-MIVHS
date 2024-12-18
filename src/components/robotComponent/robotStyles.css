@@ -1,0 +1,32 @@
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-60%) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(60%) rotate(360deg);
+  }
+}
+
+@keyframes bounceEye {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#eyeLeft,
+#eyeRight,
+#nose {
+  animation: bounceEye 2s infinite;
+  box-shadow: 0 0 10px 2px #db2777;
+}
+
+#robotsBody {
+  animation: moveHorizontal 20s infinite;
+}
