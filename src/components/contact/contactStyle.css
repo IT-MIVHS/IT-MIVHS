@@ -1,0 +1,69 @@
+/* Styling umum untuk input dan textarea */
+input,
+textarea {
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    background-color: #4444446a;
+    outline: none;
+    box-shadow: 0 0 10px 2px #9d174d;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Efek saat input atau textarea aktif */
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 15px 3px #e11d48;
+}
+
+/* Styling placeholder secara default */
+input::placeholder,
+textarea::placeholder {
+    color: #fff;
+    font-size: 14px;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Styling placeholder saat input atau textarea aktif */
+input:focus::placeholder,
+textarea:focus::placeholder {
+    transform: translateY(-10px); /* Placeholder bergerak lebih halus */
+    opacity: 0.7; /* Placeholder sedikit lebih transparan */
+    font-size: 12px; /* Placeholder mengecil */
+}
+
+.submitBtn {
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    background-color: #4444446a;
+    outline: none;
+    box-shadow: 0 0 10px 2px #9d174d;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.submitBtn:hover {
+    box-shadow: 0 0 15px 3px #e11d48;
+}
+
+/* Animasi fadeUp untuk contact */
+#contact.fade-up {
+    animation-name: fadeUp;
+    animation-timing-function: ease-in-out;
+    animation-duration: 850ms;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

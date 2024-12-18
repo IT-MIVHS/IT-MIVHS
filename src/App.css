@@ -6,10 +6,12 @@
 *,
 html {
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: black;
+    overflow: hidden auto;
 }
 
 html,
@@ -72,11 +74,42 @@ body {
     }
 }
 
-.observe {
+.observed {
     opacity: 0;
     transition-duration: 0.5s;
 }
 
-.observe.active {
+.observed.active {
     opacity: 1;
+}
+
+.observed.observe-top {
+    position: relative;
+    top: -100px;
+}
+
+.observed.observe-top.active {
+    top: 0;
+}
+
+.observed.observe-bottom {
+    position: relative;
+    bottom: -100px;
+}
+
+.observed.observe-bottom.active {
+    bottom: 0;
+}
+
+.observed.observe-left {
+    transform: translateX(-100px);
+}
+
+.observed.observe-right {
+    transform: translateX(100px);
+}
+
+.observed.observe-left.active,
+.observed.observe-right.active {
+    transform: translateX(0);
 }

@@ -1,8 +1,8 @@
 #image {
     position: relative;
     background-color: transparent;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     left: -50px;
     top: 20px;
 }
@@ -18,14 +18,14 @@
     transform: rotate(10deg);
     background-size: cover;
 
-    opacity: 0.8;
+    opacity: 0.9;
 
     width: 100%;
     height: 100%;
 
     animation-name: image_intro;
     animation-timing-function: ease-in-out;
-    animation-duration: 1s;
+    animation-duration: 700ms;
 }
 
 #image::before {
@@ -37,13 +37,15 @@
     transform-origin: center;
     transform: rotate(10deg);
 
-    background-color: rgb(166, 6, 206);
+    background-color: rgba(166, 6, 206, 0.316);
+    box-shadow: 0 0 10px 4px rgba(166, 6, 206, 0.316);
+    opacity: 0.8;
     width: 100%;
     height: 100%;
 
     animation-name: image_intro;
     animation-timing-function: ease-in-out;
-    animation-duration: 1s;
+    animation-duration: 850ms;
 }
 
 @keyframes image_intro {
@@ -72,7 +74,7 @@ div#material-bg {
 div#material-bg > div#material-bg-image {
     background-image: url("../../../public/material.jpg");
     position: absolute;
-    opacity: 0.1;
+    opacity: 0.2;
 
     width: 100%;
     height: 100%;

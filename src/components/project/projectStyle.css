@@ -1,0 +1,14 @@
+.project {
+    cursor: default;
+    transition-duration: 0.5s;
+    user-select: none;
+}
+
+.project:hover {
+    scale: 1.4;
+}
+
+.project:hover ~ .project,
+.project:has(~ .project:hover) {
+    filter: blur(4px);
+}
