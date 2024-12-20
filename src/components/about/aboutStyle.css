@@ -1,0 +1,15 @@
+@keyframes floatingX {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+
+#aboutRobots {
+    animation: floatingX 2s alternate infinite;
+    rotate: 30deg;
+}
