@@ -1,18 +1,18 @@
 @keyframes moveHorizontal {
   0% {
-    transform: translateX(-60%) rotate(0deg);
+    transform: translateX(-100%) rotate(0deg);
   }
   100% {
-    transform: translateX(60%) rotate(360deg);
+    transform: translateX(100%) rotate(360deg);
   }
 }
 
 @keyframes moveHorizontalSec {
   0% {
-    transform: translateX(60%) rotate(0deg);
+    transform: translateX(100%) rotate(0deg);
   }
   100% {
-    transform: translateX(-60%) rotate(-360deg);
+    transform: translateX(-100%) rotate(-360deg);
   }
 }
 

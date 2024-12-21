@@ -7,14 +7,14 @@ import SliderGallery from "../sliderGallery/slidersGallery.jsx";
 const Project = function () {
     return (
         <>
-            <section id="project" className="relative">
-                <div className="mx-auto max-w-7xl text-white h-screen translate-y-1/4 relative">
+            <section id="project" className="h-screen flex items-center">
+                <div className="text-white relative">
                     <div className="-z-10 ring ring-indigo-900 bg-pink-800 rounded-full w-1/4 h-80 absolute left-8 -top-48 blur-3xl opacity-20"></div>
                     <div className="-z-10 ring ring-indigo-900 bg-pink-800 rounded-full w-1/4 h-80 absolute right-48 bottom-48 blur-3xl opacity-20"></div>{" "}
-                    <h1 className="text-pink-600 font-bold text-xl uppercase text-center observe observe-left">
+                    <h1 className="text-pink-600 font-bold text-xl uppercase text-center observe">
                         Project
                     </h1>
-                    <div className="project-list grid grid-cols-4 p-6 w-full gap-4 mt-4">
+                    <div className="project-list sm:grid sm:grid-cols-4 grid grid-cols-1 p-6 w-full gap-4 mt-4">
                         {projects.map((project, index) => {
                             const title = project.title;
                             const desc = project.desc;
@@ -64,14 +64,9 @@ const Project = function () {
                         })}
                     </div>
                 </div>
-                {/* Swiper Slide */}
-                <div className="slide-container space-y-10" id="gallery">
-                    <h1 className="text-2xl font-bold uppercase text-pink-600 observe text-center">
-                        Gallery
-                    </h1>
-                    <SliderGallery />
-                </div>
             </section>
+            <SliderGallery />
+
         </>
     );
 };

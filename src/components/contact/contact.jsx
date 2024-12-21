@@ -36,13 +36,13 @@ const Contact = () => {
         <section
             id="contact"
             ref={contactRef}
-            className={`contact-section ${isVisible ? "fade-up" : ""}`}
+            className={`contact-section h-screen flex items-center ${isVisible ? "fade-up" : ""}`}
         >
             <div
                 id="contactContainer"
-                className="max-w-7xl mx-auto text-white h-screen translate-y-1/4"
+                className="text-white"
             >
-                <div id="title" className="text-center">
+                <div id="title" className="text-center observe">
                     <h1 className="text-pink-600 font-semibold uppercase text-xl">Contact Us</h1>
                     <p className="text-md">Need Help? Contact Us!</p>
                 </div>

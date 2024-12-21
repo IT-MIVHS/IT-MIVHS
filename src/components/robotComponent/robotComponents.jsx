@@ -4,14 +4,14 @@ import { Typewriter } from "react-simple-typewriter";
 const RobotComponents = () => {
   return (
     <>
-      <img
+      {/* <img
         src="material.jpg"
         className="opacity-20 -z-50 absolute h-1/2 w-full"
         alt=""
-      />
+      /> */}
       <main
         id="robotsBody"
-        className="relative flex flex-col items-center justify-center"
+        className="relative flex flex-col items-center justify-center -z-50"
       >
         {/* Typewriter Section */}
         <div className="text-center text-white text-2xl font-bold">

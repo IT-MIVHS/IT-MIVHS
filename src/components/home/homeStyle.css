@@ -1,92 +1,103 @@
 #image {
-    position: relative;
-    background-color: transparent;
-    width: 350px;
-    height: 350px;
-    left: -50px;
-    top: 20px;
+  position: relative;
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  left: -50px;
+  top: 20px;
 }
 
 #image::after {
-    content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
 
-    display: block;
-    background-image: url("../../../public/programming.jpg");
-    border-radius: 15px;
-    transform-origin: center;
-    transform: rotate(10deg);
-    background-size: cover;
+  display: block;
+  background-image: url("../../../public/programming.jpg");
+  border-radius: 15px;
+  transform-origin: center;
+  transform: rotate(10deg);
+  background-size: cover;
 
-    opacity: 0.9;
+  opacity: 0.9;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    animation-name: image_intro;
-    animation-timing-function: ease-in-out;
-    animation-duration: 700ms;
+  animation-name: image_intro;
+  animation-timing-function: ease-in-out;
+  animation-duration: 700ms;
 }
 
 #image::before {
-    content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
 
-    display: block;
-    border-radius: 15px;
-    transform-origin: center;
-    transform: rotate(10deg);
+  display: block;
+  border-radius: 15px;
+  transform-origin: center;
+  transform: rotate(10deg);
 
-    background-color: rgba(166, 6, 206, 0.316);
-    box-shadow: 0 0 10px 4px rgba(166, 6, 206, 0.316);
-    opacity: 0.8;
-    width: 100%;
-    height: 100%;
+  background-color: rgba(166, 6, 206, 0.316);
+  box-shadow: 0 0 10px 4px rgba(166, 6, 206, 0.316);
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
 
-    animation-name: image_intro;
-    animation-timing-function: ease-in-out;
-    animation-duration: 850ms;
+  animation-name: image_intro;
+  animation-timing-function: ease-in-out;
+  animation-duration: 850ms;
 }
 
 @keyframes image_intro {
-    0% {
-        top: 100vh;
-        left: 70vw;
-    }
-    100% {
-        top: 0;
-        left: 0;
-    }
+  0% {
+    top: 100vh;
+    left: 70vw;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
 }
 
 div#material-bg {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    z-index: -100;
+  z-index: -100;
 }
 
 div#material-bg > div#material-bg-image {
-    background-image: url("../../../public/material.jpg");
-    position: absolute;
-    opacity: 0.2;
+  background-image: url("../../../public/material.jpg");
+  position: absolute;
+  opacity: 0.2;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 div#material-bg::after {
-    content: "";
-    display: block;
-    position: absolute;
+  content: "";
+  display: block;
+  position: absolute;
 
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(200, 200, 200, 0.25));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(200, 200, 200, 0.25)
+  );
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 476px) {
+  #image {
+    display: none;
+ 
+  }
 }

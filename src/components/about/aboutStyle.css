@@ -1,15 +1,23 @@
 @keyframes floatingX {
-    0% {
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
 
-    100% {
-        transform: translateY(15px);
-    }
+  100% {
+    transform: translateY(15px);
+  }
 }
 
+#imageAbout {
+  position: absolute;
+  left: 0;
+  background-image: url("../../../public/material.jpg");
+  border-radius: 15px;
+  transform-origin: center;
+  background-size: cover;
 
-#aboutRobots {
-    animation: floatingX 2s alternate infinite;
-    rotate: 30deg;
+  opacity: 0.3;
+  z-index: -999;
+  width: 100%;
+  height: 50%;
 }

@@ -10,11 +10,18 @@ const SliderGallery = () => {
   ];
 
   return (
-    <div className="opacity-80">
+    <div id="gallery" className="h-screen items-center flex">
+      <div className="-z-10 ring ring-indigo-900 bg-pink-800 rounded-full w-1/4 h-80 absolute left-8 -top-48 blur-3xl opacity-20"></div>
+      <div className="-z-10 ring ring-indigo-900 bg-pink-800 rounded-full w-1/4 h-80 absolute right-48 bottom-48 blur-3xl opacity-20"></div>
       <div
         id="sliderContainer"
         className="container mx-auto rounded-xl p-4 overflow-x-hidden MyGradient"
       >
+        <div className="slide-container" id="gallery">
+          <h1 className="text-2xl font-bold uppercase text-pink-600 observe text-center">
+            Gallery
+          </h1>
+        </div>
         <div className="flex gap-2">
           <motion.div
             initial={{ x: 0 }}
@@ -55,7 +62,6 @@ const SliderGallery = () => {
             ))}
           </motion.div>
         </div>
-
         <div className="flex gap-2">
           <motion.div
             initial={{ x: "-100%" }}
