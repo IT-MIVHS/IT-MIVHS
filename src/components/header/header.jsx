@@ -6,7 +6,7 @@ const Header = () => {
     <section>
       <header
         id="header"
-        className="fixed left-0 top-0 sm:top-0 sm:right-0 sm:left-0 mx-auto text-white z-50 w-[26rem] sm:w-3/4"
+        className="fixed left-0 top-2 sm:top-0 sm:right-0 sm:left-0 mx-auto text-white z-50 w-[26rem] sm:w-3/4"
       >
         <nav className="py-1 px-6 flex justify-between items-center flex-row rounded-3xl">
           <div id="bg"></div>
@@ -49,10 +49,10 @@ const Header = () => {
             <li>
               <a href="#contact">Contact</a>
             </li>
-            <li>
+            <li className="p-4 sm:p-0">
               <a
                 id="signup"
-                className="bg-pink-600 py-1 px-3 rounded-3xl"
+                className="bg-pink-600 py-4 px-3 sm:py-1 sm:px-3 rounded-3xl"
                 href="#regist"
               >
                 Sign Up
