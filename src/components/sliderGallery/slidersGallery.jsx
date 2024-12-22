@@ -10,9 +10,7 @@ const SliderGallery = () => {
   ];
 
   return (
-    <div id="gallery" className="h-screen items-center flex observe">
-      <div className="-z-10 ring ring-indigo-900 bg-pink-800 rounded-full w-1/4 h-80 absolute left-8 -top-48 blur-3xl opacity-20"></div>
-      <div className="-z-10 ring ring-indigo-900 bg-pink-800 rounded-full w-1/4 h-80 absolute right-48 bottom-48 blur-3xl opacity-20"></div>
+    <div id="gallery" className="h-screen items-center flex ">
       <div
         id="sliderContainer"
         className="container mx-auto rounded-xl p-4 overflow-x-hidden MyGradient"
@@ -38,7 +36,7 @@ const SliderGallery = () => {
                 key={index}
                 src={slider.img}
                 alt={`slide-${index}`}
-                className="p-4 w-full h-52 rounded-3xl"
+                className="sm:p-4 sm:w-full sm:h-52 rounded-3xl p-4 h-64 w-64 aspect-auto object-cover"
               />
             ))}
           </motion.div>
@@ -57,7 +55,7 @@ const SliderGallery = () => {
                 key={index}
                 src={slider.img}
                 alt={`slide-${index}`}
-                className="p-4 w-full h-52 rounded-3xl"
+                className="sm:p-4 sm:w-full sm:h-52 rounded-3xl p-4 h-64 w-64 aspect-auto object-cover"
               />
             ))}
           </motion.div>
@@ -78,7 +76,7 @@ const SliderGallery = () => {
                 key={index}
                 src={slider.img}
                 alt={`slide-${index}`}
-                className="p-4 w-full h-52 rounded-3xl"
+                className="sm:p-4 sm:w-full sm:h-52 rounded-3xl p-4 h-64 w-64 aspect-auto object-cover"
               />
             ))}
           </motion.div>
@@ -97,7 +95,7 @@ const SliderGallery = () => {
                 key={index}
                 src={slider.img}
                 alt={`slide-${index}`}
-                className="p-4 w-full h-52 rounded-3xl"
+                className="sm:p-4 sm:w-full sm:h-52 rounded-3xl p-4 h-64 w-64 aspect-auto object-cover"
               />
             ))}
           </motion.div>

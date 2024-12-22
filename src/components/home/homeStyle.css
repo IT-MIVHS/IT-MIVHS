@@ -97,7 +97,12 @@ div#material-bg::after {
 
 @media (max-width: 476px) {
   #image {
-    display: none;
- 
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 6rem;
+    width: 70%;
+    height: 35%;
   }
 }

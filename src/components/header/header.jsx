@@ -6,20 +6,18 @@ const Header = () => {
     <section>
       <header
         id="header"
-        className="fixed left-0 top-2 sm:top-0 sm:right-0 sm:left-0 mx-auto text-white z-50 w-[26rem] sm:w-3/4"
+        className="fixed left-0 right-0 top-0 sm:top-0 sm:right-0 sm:left-0 mx-auto text-white z-50 w-5/6 sm:w-3/4 h-10 sm:h-full"
       >
-        <nav className="py-1 px-6 flex justify-between items-center flex-row rounded-3xl">
+        <nav className="sm:py-2 sm:px-4 py-0 px-4 flex justify-between sm:items-center items-start flex-row rounded-3xl">
           <div id="bg"></div>
           <div id="logos" className="flex items-center gap-5 rounded-full">
             <img
               id="logoIt"
               src="teamItIcon.jpg"
               alt="Icon Team IT"
-              className="rounded-full"
-              width={30}
-              height={30}
+              className="rounded-full sm:w-8 sm:h-8 w-6 h-6"
             />
-            <h1 id="logo" className="text-2xl font-bold tracking-widest">
+            <h1 id="logo" className="text-sm sm:text-2xl font-bold tracking-widest">
               <span>IT</span>
               <span>MIVHS</span>
             </h1>
@@ -32,7 +30,7 @@ const Header = () => {
           </div>
           <ul
             id="navigate"
-            className="flex gap-8 justify-end font-medium text-sm flex-col md:flex-row"
+            className="flex gap-6 justify-end font-medium text-sm flex-col md:flex-row"
           >
             <li>
               <a href="#">Home</a>
