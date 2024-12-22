@@ -30,7 +30,7 @@ const About = () => {
                 <h1 className="text-center text-lg font-bold text-pink-600 observe observe">
                   VISI
                 </h1>
-                <p className="observe text-sm">
+                <p className="observe observe-right text-sm">
                   Menciptakan komunitas teknologi yang inovatif dan
                   berkelanjutan, serta menjadi pelopor dalam pengembangan solusi
                   berbasis teknologi informasi
@@ -43,15 +43,15 @@ const About = () => {
                   MISI
                 </h1>
                 <ol className="list-decimal text-left">
-                  <li className="observe text-sm">
+                  <li className="observe observe-left text-sm">
                     Memberikan pelatihan dan pengembangan keterampilan IT yang
                     relevan dengan kebutuhan industri.
                   </li>
-                  <li className="observe text-sm">
+                  <li className="observe observe-left text-sm">
                     Membangun ekosistem kolaboratif yang mendukung pertumbuhan
                     dan inovasi teknologi.
                   </li>
-                  <li className="observe text-sm">
+                  <li className="observe observe-left text-sm">
                     Mengembangkan solusi teknologi yang memberikan dampak nyata
                     bagi masyarakat.
                   </li>
