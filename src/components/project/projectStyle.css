@@ -8,6 +8,12 @@
     scale: 1.4;
 }
 
+@media (max-width: 512px) {
+    .project:hover {
+        scale: 1.15;
+    }
+}
+
 .project:hover ~ .project,
 .project:has(~ .project:hover) {
     filter: blur(4px);
