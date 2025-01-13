@@ -115,3 +115,10 @@ body {
 .observed.observe-right.active {
     transform: translateX(0);
 }
+
+@media (max-width: 400px) {
+    .observed.observe-left,
+    .observed.observe-right {
+        transform: translateX(0);
+    }
+}
