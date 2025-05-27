@@ -9,19 +9,8 @@ nav {
 #logoIt {
     box-shadow: 0 0 6px 2px #6d28d9;
 }
-#logo > span:nth-child(1) {
-    background: -webkit-linear-gradient(rgb(109 40 217), #ffffff);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 #logo > span:nth-child(2) {
-    background: -webkit-linear-gradient(
-        rgb(219 39 119 / var(--tw-text-opacity, 1)),
-        rgb(255, 255, 255)
-    );
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-left: 2px;
 }
 
 a {
@@ -61,10 +50,6 @@ a#signup:hover {
 
 div#toggle {
     display: none;
-}
-
-ul#navigate {
-    flex-direction: row;
 }
 
 nav#navigation {
