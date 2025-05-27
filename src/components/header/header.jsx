@@ -20,7 +20,7 @@ const Header = () => {
                             alt="Icon Team IT"
                             className="rounded-full sm:w-8 sm:h-8 w-6 h-6"
                         />
-                        <h1 id="logo" className="text-sm sm:text-2xl font-thin tracking-widest">
+                        <h1 id="logo" className="text-sm sm:text-2xl font-medium tracking-widest">
                             <span>IT</span>
                             <span>MIVHS</span>
                         </h1>
